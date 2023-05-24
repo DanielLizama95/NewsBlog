@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Final</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-container">
+          <a href="index.html">
+            <img
+              id="logo"
+              src="./IMG/logoJoyCodeNews.png"
+              alt="Logo de JoyCode News"
+            />
+          </a>
+        </div>
+
+        <ul class="menu">
+          <li>
+            <a href="index.html"
+              ><span class="fa-solid fa-house navbar-icon"></span>Portada</a
+            >
+          </li>
+
+          <li>
+            <a href="noticias.html"
+              ><span class="fa-solid fa-newspaper navbar-icon"></span
+              >Noticias</a
+            >
+          </li>
+
+          <li>
+            <a href="trivia.html"
+              ><span class="fa-solid fa-question navbar-icon"></span>Trivia</a
+            >
+          </li>
+
+          <li>
+            <a href="contacto.html"
+              ><span class="fa-solid fa-at navbar-icon"></span>Contacto</a
+            >
+          </li>
+        </ul>
+
+        <div class="burger-menu-container">
+          <span class="burger">☰</span>
+        </div>
+      </nav>
+
+      <div class="mobile-menu hidden">
+        <ul>
+          <li>
+            <a href="index.html"
+              ><span class="fa-solid fa-house navbar-icon"></span>Portada</a
+            >
+          </li>
+
+          <li>
+            <a href="noticias.html"
+              ><span class="fa-solid fa-newspaper navbar-icon"></span
+              >Noticias</a
+            >
+          </li>
+
+          <li>
+            <a href="trivia.html"
+              ><span class="fa-solid fa-question navbar-icon"></span>Trivia</a
+            >
+          </li>
+
+          <li>
+            <a href="contacto.html"
+              ><span class="fa-solid fa-at navbar-icon"></span>Contacto</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main trivia-main">
+      <div id="intro-container">
+        <p class="title">La trivia de esta semana es sobre... ¡Javascript!</p>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png"
+          alt="logo de Javascript"
+        />
+        <button id="start-button" class="button">Comenzar</button>
+      </div>
+      <div id="trivia-game-wrapper" class="hidden">
+        <div id="game-container">
+          <div id="question-container"></div>
+          <div id="choices-container"></div>
+          <button id="next-button">Siguiente</button>
+        </div>
+      </div>
+      <div id="result-container"></div>
+    </main>
+
+    <footer class="footer">
+      <p class="text">
+        Hecho con <i class="fa-solid fa-heart"></i> por Daniel Lizama
+      </p>
+    </footer>
+    <script src="JS/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/31189313ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./JS/trivia-game.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+  </body>
+</html>

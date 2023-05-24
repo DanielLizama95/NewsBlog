@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Final</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-container">
+          <a href="index.html">
+           <img id="logo" src="./IMG/logoJoyCodeNews.png" alt="Logo de JoyCode News">
+          </a>
+         </div>
+        <ul class="menu">
+          <li>
+            <a href="index.html"
+              ><span class="fa-solid fa-house navbar-icon"></span>Portada</a
+            >
+          </li>
+
+          <li>
+            <a href="noticias.html"
+              ><span class="fa-solid fa-newspaper navbar-icon"></span
+              >Noticias</a
+            >
+          </li>
+
+          <li>
+            <a href="trivia.html"
+              ><span class="fa-solid fa-question navbar-icon"></span>Trivia</a
+            >
+          </li>
+
+          <li>
+            <a href="contacto.html"
+              ><span class="fa-solid fa-at navbar-icon"></span>Contacto</a
+            >
+          </li>
+        </ul>
+
+        <div class="burger-menu-container">
+          <span class="burger">☰</span>
+        </div>
+      </nav>
+
+      <div class="mobile-menu hidden">
+        <ul>
+          <li>
+            <a href="index.html"
+              ><span class="fa-solid fa-house navbar-icon"></span>Portada</a
+            >
+          </li>
+
+          <li>
+            <a href="noticias.html"
+              ><span class="fa-solid fa-newspaper navbar-icon"></span
+              >Noticias</a
+            >
+          </li>
+
+          <li>
+            <a href="trivia.html"
+              ><span class="fa-solid fa-question navbar-icon"></span>Trivia</a
+            >
+          </li>
+
+          <li>
+            <a href="contacto.html"
+              ><span class="fa-solid fa-at navbar-icon"></span>Contacto</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main contact-main">
+      <section>
+        <h2 class="contact-page-title">¡Hola! Mi nombre es <span class="bold-text">Daniel Lizama</span></h2>
+        <div class="user-info">
+          <img src="https://cdn.shopify.com/s/files/1/0306/6419/6141/articles/coding_languages.png?v=1619126283">
+          <span class="birth-date"> 🎂 21/09/1995</span>
+          <span
+            ><i class="fa-sharp fa-solid fa-location-dot"></i> Cancún, México</span>
+        </div>
+        <p>
+          Mi pasión siempre ha sido la informática y la tecnología en general 👨‍💻. Soy
+          editor de video y youtuber desde los 13 años 🎥.
+        </p>
+        <p>
+          También tengo un gran amor por los videojuegos desde que tengo uso de la
+          razón 🎮. Siempre me había interesado lo que había detrás de todo lo que
+          vemos, pero no fue hasta el año pasado que me atreví a entrar al mundo
+          de la programación con HTML, CSS, JS. También estoy aprendiendo <span class="category">C#</span> con
+          Unity.
+        </p>
+        <img src="https://i.pcmag.com/imagery/articles/06CArPT35OXGxClFqqNhRXS-1.fit_lim.size_1600x900.v1617180621.jpg" alt="">
+        <p>
+          Este blog es una mezcla de mis pasiones: los videojuegos y el código, y
+          naturalmente, lo programé yo 💪. Aunque notarán que mis habilidades de
+          diseño no son las mejores 😅.
+        </p>
+      </section>
+
+<section class="contact-section">
+  <h3 class="title">¿Quieres contactar conmigo?</h3>
+  <div class="form-container">
+        <form class="form" action="https://formspree.io/f/mzbqwrvo" method="POST">
+
+          <label for="name">
+            Nombre:
+            <input type="text">
+          </label>
+          <label for="email">
+            Correo:
+            <input type="email" name="email" required />
+          </label>
+          <label for="comment">
+            ¿Algo que me quieras decir?
+            <textarea name="message" required></textarea>
+          </label>
+  
+          <button type="submit">ENVIAR</button>
+        </form>
+      </div>
+      <p class="text">Ya sea porque quieres saludarme, darme sugerencias o contratarme como desarrollador Frontend, cualquier mensaje es bienvenido ^^</p>
+</section>
+
+    </main>
+
+    <footer class="footer">
+      <p class="text">
+        Hecho con <i class="fa-solid fa-heart"></i> por Daniel Lizama <a href="https://github.com/DanielLizama95/" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </p>
+    </footer>
+    <script src="JS/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/31189313ae.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
